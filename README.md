@@ -36,13 +36,9 @@ You do not need to call it by name. It starts only when the conversation shows t
 
 Prompts that set it off:
 
-```
-Sam and I keep building the same feature twice. We tried a Notion board, then daily Slack standups, then a weekly Loom walkthrough. It happened again last week.
-```
+> Sam and I keep building the same feature twice. We tried a Notion board, then daily Slack standups, then a weekly Loom walkthrough. It happened again last week.
 
-```
-By Friday I have 8 to 10 unwritten session notes. I tried a timer per note, a reward for zero backlog, and moving my notes block to 7am. None of it stuck.
-```
+> By Friday I have 8 to 10 unwritten session notes. I tried a timer per note, a reward for zero backlog, and moving my notes block to 7am. None of it stuck.
 
 If the failed attempts were all variations on one approach (the same message reworded, the same setting nudged), the companion skill [Look at the Frame](https://github.com/rightin2/look-at-the-frame) is the one that fits. The two never run together.
 
