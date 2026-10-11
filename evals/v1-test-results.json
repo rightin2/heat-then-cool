@@ -1,0 +1,237 @@
+{
+ "tasks": {
+  "essay": {
+   "scores": {
+    "baseline": [
+     8,
+     8
+    ],
+    "frame": [
+     7,
+     7
+    ],
+    "scale": [
+     7,
+     7
+    ],
+    "anneal": [
+     9,
+     9
+    ]
+   },
+   "why": {
+    "baseline": [
+     "The tightest of the four. It names the thesis, maps each point to a stage, gives a simple fill in the blank test, and keeps a sensible caveat about the returning client. It slightly embellishes the form as an 'interrogation' and the fee talk as 'transactional', and it assumes the order of events. Good length for a busy professional.",
+     "It is tight and clear, with the same spine and a client-order walkthrough. The fill-in-the-blank test is easy to apply, and the advice to trim to 1,000 to 1,200 words is practical. It honestly flags that her story could point elsewhere. A few details, like 'one-sided interrogation', go slightly beyond what was given."
+    ],
+    "frame": [
+     "Same sound spine, and it usefully reminds the writer about the clients who never came back. The 'projected versus imposed' labels add jargon a busy reader does not need. The sample opening uses invented details, though it marks them clearly. The single 900 word middle block is less actionable than a per-section plan.",
+     "It has good substance: it flags blind spots such as silent dropouts and session-fit causes, and it asks the two deciding questions. The 'projected/imposed' labels are unexplained jargon that a busy reader will stumble on. The sample opening needs bracketed invented details, though they are clearly marked."
+    ],
+    "scale": [
+     "Correct spine, useful transition rule, and it rightly says to check when the fee talk happens. However, it first states the fee talk ends the stretch before the session, then places it after, which is inconsistent. It is wordier and more repetitive than it needs to be.",
+     "It correctly picks point two as the thesis and gives a usable structure, editing rules, and an audience check. Some framing is muddled, such as 'I'm assuming that is how you wrote it. You never stated it.' It runs long, and it never considers that the returning client's story might point to a different spine."
+    ],
+    "anneal": [
+     "Finds the spine in point two and turns the other points into stages of one client timeline, with word counts per section. Offers a cheap test, asks who reads the newsletter, and flags the case where the client left over the session itself. One flaw: it assumes the fee talk happens before the session, which the person never said.",
+     "It explains why the piece reads as five posts, then gives a section-by-section plan with word counts and a cheap per-section check in the client's voice. It says why the alternative spines lose and asks the audience question that changes the ending. It is also honest about confidence and names what would shift the spine. It is a little long but well organized."
+    ]
+   },
+   "best": [
+    "anneal",
+    "anneal"
+   ]
+  },
+  "bug": {
+   "scores": {
+    "baseline": [
+     8,
+     9
+    ],
+    "frame": [
+     9,
+     7
+    ],
+    "scale": [
+     7,
+     6
+    ],
+    "anneal": [
+     9,
+     8
+    ]
+   },
+   "why": {
+    "baseline": [
+     "It explains clearly why each of the three fixes moved the error. Splitting source timezone from business timezone is a useful, concrete decision. The code and tests are solid. It treats test disagreement as one item in a list rather than the central diagnosis, and gives no quick way to confirm which cause applies.",
+     "Names the core cause directly: nothing states which timezone's calendar defines a week. It then explains how each of the three fixes picks a different answer, which matches exactly what the person asked. Separating source timezone from business timezone is a sharp, actionable split. Boundary tests are concrete. Tight length. It is lighter on a step-by-step way to prove the tests disagree."
+    ],
+    "frame": [
+     "Its sharpest insight is that all three fixes changed how the timestamp is represented, never the rule that turns it into a week. A short script prints local date, UTC date and expected value side by side, directly testing whether the tests disagree. The fix is clean with a configurable week start, and it names open questions and limits such as multiple locations and DST. Length is reasonable.",
+     "Sound diagnosis that the tests may expect different midnights. Includes a useful diagnostic script that checks whether expected values follow local or UTC dates, and the code fix is correct. The imposed and projected labels add clutter, and the limitations section makes it longer than needed."
+    ],
+    "scale": [
+     "It correctly finds the core issue: there is no single bucketing rule, and the tests likely disagree. It gives a good table check, code and edge-case tests. However, the meta framing ('Restated neutrally', 'Assumptions in play') adds bulk, and the stage-by-stage walkthrough runs long for a busy reader.",
+     "Content is correct, and the stage-by-stage walk through the pipeline is thorough. The meta sections ('You have been treating this as', 'Restated neutrally') are padding, and the closing paragraph repeats earlier points. Too long for a busy reader given how much it overlaps with the others."
+    ],
+    "anneal": [
+     "It ranks causes against the trade-off pattern, including mixed offset and naive rows, which fits well. Each diagnostic result maps to a specific cause, and it flags the naive-equals-local assumption. It states confidence and what would prove it wrong. It is a bit long, and 'this beat your three earlier fixes' is asserted, not shown.",
+     "Ranks causes and maps each check to a cause, so the result of the diagnostic tells you what to do. Mixed naive and offset rows is a strong explanation for the trade-off pattern. Accurate details such as the pytz LMT offset and the note that 'Z' needs Python 3.11. It is long, and it assumes a clinic setting without being told."
+    ]
+   },
+   "best": [
+    "frame",
+    "baseline"
+   ]
+  },
+  "decision": {
+   "scores": {
+    "baseline": [
+     9,
+     9
+    ],
+    "frame": [
+     8,
+     8
+    ],
+    "scale": [
+     7,
+     7
+    ],
+    "anneal": [
+     7,
+     7
+    ]
+   },
+   "why": {
+    "baseline": [
+     "Finds the real causal structure. Burnout is the outcome, the supervisor pairing scales every other cost, the March deadline and partner are gates, and income against clinic time is the only true trade-off. It is concise, actionable and invents nothing. It only lightly touches whether they want the work.",
+     "Gives the clearest shape. Burnout is the outcome, March and the partner are gates, the supervisor pairing changes the weight of the other factors, and income versus clinic time is the one real trade-off. It ends with concrete questions and a conditions-for-yes reframe, uses only the stated facts, and is a manageable length. It does not raise whether the person wants to supervise at all."
+    ],
+    "frame": [
+     "Sorts the factors into vetoes, a timing clash, missing information and one real trade-off, which explains the circling. It gives a concrete next step and flags the missing 'do I want this' factor. It invents nothing, but it runs long, and the imposed/projected labelling adds bulk without much payoff.",
+     "Thorough and practical. It separates stated facts from assumed ones, sorts the factors by type, offers middle options, gives a concrete sequence (email first, then the partner talk) and flags desire and career direction as missing. Slightly long, and some of the imposed versus projected labeling adds bulk without much payoff."
+    ],
+    "scale": [
+     "The capacity vs value split with timing as the lever is clear. Spotting desire as the missing factor is a strong insight, and the decision rule is usable. It invents euros as the currency and repeats the 'counted three times' point. It is long and somewhat redundant.",
+     "It usefully spots the missing factor, desire for the work, and gives a good decision rule. But it invents details: euros, and a partner's 'unease' that was never stated. The assumptions and 'seen from outside' sections repeat each other, so it runs long for a busy reader."
+    ],
+    "anneal": [
+     "The three-group sort and ranked reasons for circling are useful, and the cheap checks are actionable. Some reasons are speculative, such as 'already decided, looking for permission'. It assumes a January to March load window. The confidence section and length feel heavy for a busy reader.",
+     "Sound grouping and cheap checks with time estimates. The ranked list of reasons for circling, the confidence notes and the falsification section make it feel like analysis of the analysis. It is heavy for someone who just wants to see the shape. The close-call rule is a good touch."
+    ]
+   },
+   "best": [
+    "baseline",
+    "baseline"
+   ]
+  },
+  "waitlist": {
+   "scores": {
+    "baseline": [
+     8,
+     8
+    ],
+    "frame": [
+     7,
+     7
+    ],
+    "scale": [
+     7,
+     6
+    ],
+    "anneal": [
+     9,
+     9
+    ]
+   },
+   "why": {
+    "baseline": [
+     "Correctly names the outflow problem and explains the two-week rebound clearly. Gives practical measures and levers at a good length. It misses the possibility that the list holds stale names, and its causes are not tied to specific tests.",
+     "Clear, concise and practical, with a strong set of levers and a sensible reframe about target wait times. It gives no predictions to separate the outflow cause from the demand cause. It also assumes clients stay six months or more, which the person did not say."
+    ],
+    "frame": [
+     "Good split into two mechanisms, with questions that tell them apart and a helpful note on clinical limits. The Projected/Imposed labels are awkward jargon, and the answer runs long for a busy clinician.",
+     "Same core mechanisms and good questions to tell them apart, plus a useful point about the person's goals and clinical fit. The Projected, Imposed, Firm and Inference labels add jargon and length without adding much."
+    ],
+    "scale": [
+     "Same core insight, plus a useful step to clean the list. The GIVEN/ASSUMED labels and stage-by-stage walkthrough add bulk without much gain. It states that the discharge rate did not change as if known, which the person never said.",
+     "Right diagnosis and useful checks, but padded with a stage-by-stage flow list and GIVEN and ASSUMED tags. It states as fact that the discharge rate did not change, which the person never said. Too long for a busy reader."
+    ],
+    "anneal": [
+     "Ranks the causes and gives each a checkable prediction. Lists checks from cheapest to most effort, including a stale-list sweep, and says what would prove it wrong. The added structure earns its length, and it invents no facts.",
+     "Reads the clue correctly: three different fixes gave the same curve. It ranks causes with a testable prediction for each, lists checks cheapest first, ties actions to the results, and says what would prove it wrong. It invents nothing and its length suits the depth."
+    ]
+   },
+   "best": [
+    "anneal",
+    "anneal"
+   ]
+  },
+  "research": {
+   "scores": {
+    "baseline": [
+     9,
+     9
+    ],
+    "frame": [
+     8,
+     8
+    ],
+    "scale": [
+     6,
+     6
+    ],
+    "anneal": [
+     7,
+     7
+    ]
+   },
+   "why": {
+    "baseline": [
+     "Tight and well matched to a busy reader. It correctly discounts the blogs and covers what to check in the paper. It separates the buffer argument from the attention argument and notes the pricing cost. Setting a decision rule in advance directly fixes the flip-flopping. It asks for session type instead of guessing.",
+     "Concise and directly aimed at the flip-flopping. Writing a decision rule before the trial is the step that actually ends the back and forth. It weighs the sources honestly, separates the buffer argument from the attention argument, and names the pricing cost. It invents nothing and is a good length."
+    ],
+    "frame": [
+     "Strong specifics. It says to alternate by week rather than let clients choose, to avoid selection bias. It offers a 60-minute slot with 50 minutes of contact as a middle option, tailors advice by session type, and states honest limits. The 'projected/imposed' labeling is awkward, and it runs somewhat long.",
+     "Tight and specific. It notes that alternating by week beats letting clients choose, and it offers a middle option of 60 minute slots with 50 minutes of contact. It admits uncertainty about the attention research and lists the trial's real limits. The projected and imposed labels are slightly jargony, and it assumes the booking system is flexible."
+    ],
+    "scale": [
+     "Sound core advice, but padded with framework sections ('Seen from outside', 'How this view explains each part') that repeat points. It suggests offering both lengths side by side without flagging the self-selection problem. Too long for the value added.",
+     "Sound core advice: read the methods, define better, run a reversible trial. But it is padded with framework sections like Assumptions in play and Seen from outside that repeat themselves. It states the origin of the 50 minute hour as fact. Its preferred option, offering both lengths side by side, lets client choice skew the comparison."
+    ],
+    "anneal": [
+     "Thorough and actionable. It gives time-costed checks and a clear 'read the methods' list. But it is long, the ranked hypotheses and 65% confidence figure add bulk without much value, and the US billing aside assumes therapy, though it is flagged.",
+     "Well ordered, cheapest checks first, and asking the colleague what they have actually observed is a useful idea. But it brings in US insurance billing, which the person never mentioned. The repeated verify tags and the 65 percent confidence figure add noise without evidence, and it runs long for a busy reader."
+    ]
+   },
+   "best": [
+    "baseline",
+    "baseline"
+   ]
+  }
+ },
+ "totals": {
+  "baseline": 8.5,
+  "frame": 7.6,
+  "scale": 6.6,
+  "anneal": 8.1
+ },
+ "refine_scores": {
+  "scale": [
+   7,
+   8,
+   5,
+   7,
+   8
+  ],
+  "anneal": [
+   8,
+   7,
+   9,
+   8,
+   8
+  ]
+ },
+ "spent_usd_this_run": 3.46
+}

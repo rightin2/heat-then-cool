@@ -1,0 +1,15 @@
+{
+  "name": "heat-then-cool",
+  "description": "Heat Then Cool: a Claude skill for problems where several different fixes have failed.",
+  "owner": {
+    "name": "Jean-Luc Alder",
+    "url": "https://github.com/rightin2"
+  },
+  "plugins": [
+    {
+      "name": "heat-then-cool",
+      "source": "./",
+      "description": "When different fixes have all failed, loosen the current explanation, generate different ones and test them."
+    }
+  ]
+}

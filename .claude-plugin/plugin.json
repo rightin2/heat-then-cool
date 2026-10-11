@@ -1,0 +1,17 @@
+{
+  "name": "heat-then-cool",
+  "description": "Heat Then Cool: when different fixes have all failed, a Claude skill that loosens the explanation in charge, re-reads the evidence, generates different explanations and keeps only what survives a check.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Jean-Luc Alder",
+    "url": "https://github.com/rightin2"
+  },
+  "license": "MIT",
+  "keywords": [
+    "skill",
+    "reasoning",
+    "debugging",
+    "diagnosis",
+    "self-correction"
+  ]
+}
